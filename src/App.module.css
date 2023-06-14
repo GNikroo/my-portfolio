@@ -1,0 +1,32 @@
+.App {
+    background-color: #938b8a;
+    margin: 0;
+    color: #D8E2DC;
+}
+
+.Title {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #1b2835;
+    text-shadow: 0px 1px 4px #F8EDEB;
+}
+
+.Color1 {
+    background-color: #FAE1DD;
+}
+
+.Color2 {
+    background-color: #FCD5CE;
+}
+
+.Color3 {
+    background-color: #FEC5BB;
+}
+
+.Color4 {
+    background-color: #FDA99A;
+}
+
+.Color5 {
+    background-color: #FD8E7B;
+}

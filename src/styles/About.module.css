@@ -1,0 +1,28 @@
+.Background {
+    background-color: inherit;
+}
+
+.Subtitle {
+    font-size: 1.5rem;
+    color: #F8EDEB;
+}
+
+.Links {
+    font-weight: 600;
+    text-shadow: -1px 1px 2px #6e7b73;
+    color: #D8E2DC;
+}
+
+.Links:hover {
+    color: #FEC5BB;
+}
+
+.Links:active {
+    color: #eea79a;
+}
+
+.List {
+    color: #494645;
+    font-weight: 500;
+    line-height: 25px;
+}

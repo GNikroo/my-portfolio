@@ -1,0 +1,31 @@
+.Caption {
+    text-align: center;
+    color: #FAE1DD;
+    padding-bottom: 2rem;
+}
+
+.Caption p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+.Image {
+    align-items: center;
+    padding: 0rem 10rem 5rem;
+}
+
+.Item {
+    margin: auto;
+}
+
+.Navlink {
+    color: #FAE1DD;
+}
+
+.Image {
+    height: 40rem;
+}
