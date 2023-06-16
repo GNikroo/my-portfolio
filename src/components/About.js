@@ -1,11 +1,11 @@
 import React from "react";
-import { Card, Col, Container, ListGroup, Row } from "react-bootstrap";
+import { Card, Col, Container, ListGroup, NavLink, Row } from "react-bootstrap";
 import styles from "../styles/About.module.css";
 import appStyles from "../App.module.css";
 
 const About = () => {
   return (
-    <Container className="py-4 text-justify">
+    <Container id="about" className={appStyles.Section}>
       <Card
         className={`${styles.Background} align-items-center text-center border-0`}
       >
@@ -16,14 +16,19 @@ const About = () => {
         </Card.Body>
         <Row className="text-center">
           <Col>
-            <a href="#contact" className={`${styles.Links} text-nowrap`}>
-              work with me
-            </a>
+            <NavLink href="#contact" className={`${styles.Links} text-nowrap`}>
+              contact me
+            </NavLink>
           </Col>
           <Col>
-            <a href="#projects" className={`${styles.Links} text-nowrap`}>
+            <NavLink href="#projects" className={`${styles.Links} text-nowrap`}>
               see my work
-            </a>
+            </NavLink>
+          </Col>
+          <Col>
+            <NavLink href="#skills" className={`${styles.Links} text-nowrap`}>
+              see my skills
+            </NavLink>
           </Col>
         </Row>
         <Row>
@@ -32,9 +37,8 @@ const About = () => {
               <ListGroup.Item className={`${appStyles.Color1} border-0 p-4`}>
                 Since 2022, I have been studying at Code Institute to become a
                 junior software developer. I have completed my coursework to
-                earn a{" "}
-                <strong>Diploma in Full Stack Software Development</strong> and
-                am currently awaiting my diploma.
+                earn a Diploma in Full Stack Software Development and am
+                currently awaiting my diploma.
               </ListGroup.Item>
             </Col>
             <Col lg={8} md={10} className="rounded py-2">

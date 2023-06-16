@@ -9,3 +9,18 @@
     height: 300px;
     width: 213px;
 }
+
+.FormContainer {
+    background-color: transparent;
+}
+
+.ButtonContainer {}
+
+.Button {
+    color: black;
+    background-color: transparent;
+}
+
+.Button:hover {
+    background-color: antiquewhite;
+}
