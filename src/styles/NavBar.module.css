@@ -1,0 +1,50 @@
+.NavBar {
+    background-color: #676362;
+}
+
+.Title {
+    color: #a2ccf6;
+}
+
+.Title:hover {
+    color: #FEC5BB;
+}
+
+.Title:hover {
+    color: #FEC5BB;
+}
+
+.Title:active {
+    color: #FDA99A;
+}
+
+.Subtitle {
+    color: #aec0d3;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+.Button {
+    background-color: transparent;
+}
+
+.Button:hover {
+    background-color: #5c7c9d;
+}
+
+.Button:active {
+    background-color: #2a4968;
+}
+
+.Offcanvas {
+    border: none;
+    background-color: #676362b8;
+}
+
+.Links:hover {
+    color: #FEC5BB;
+}
+
+.Links:active {
+    color: #eea79a;
+}

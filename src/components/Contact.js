@@ -1,19 +1,40 @@
-import React from "react";
-import {
-  Button,
-  Card,
-  CardGroup,
-  Col,
-  Container,
-  Form,
-  NavLink,
-  Row,
-} from "react-bootstrap";
+import React, { useState } from "react";
+import { Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { CardGroup } from "react-bootstrap";
+import { Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { Form } from "react-bootstrap";
+import { NavLink } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import styles from "../styles/Contact.module.css";
 import appStyles from "../App.module.css";
 import photo from "../assets/GinaNikroo.jpg";
 
-const Contact = () => {
+export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message }),
+    })
+      .then(() => alert("Your message was sent 🎉"))
+      .catch((error) => alert(error));
+  }
+
   return (
     <Container
       id="contact"
@@ -25,9 +46,9 @@ const Contact = () => {
         </Card.Title>
       </Card>
       <CardGroup>
-        <Row>
+        <Row className="py-3">
           <Col>
-            <Card className={`${styles.Contact} py-5 border-0`}>
+            <Card className={`${styles.Contact} border-0`}>
               <Row className="align-items-center m-auto">
                 <Col className="text-center">
                   <Card.Img
@@ -37,9 +58,7 @@ const Contact = () => {
                 </Col>
                 <Col>
                   <Card.Body>
-                    <Card.Title
-                      className={`${appStyles.Title} card-title fw-bold`}
-                    >
+                    <Card.Title className={`${styles.Title} card-title`}>
                       Junior Software Developer
                     </Card.Title>
                     <Card.Text>
@@ -56,45 +75,40 @@ const Contact = () => {
               </Row>
             </Card>
           </Col>
-          <Col>
-            <Card
-              className={`${styles.FormContainer} border-0 m-auto px-3 pt-5`}
-            >
-              <Form netlify="true" name="contact" className="">
-                <Card.Title className="">Hire Me</Card.Title>
-                <Card.Text className="">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Illum suscipit officia aspernatur veritatis. Asperiores,
-                  aliquid?
+          <Col className="align-self-center">
+            <Card className={`${styles.FormContainer} border-0 m-auto px-3`}>
+              <Form netlify="true" name="contact" onSubmit={handleSubmit}>
+                <Card.Title className={styles.Subtitle}>Contact Me</Card.Title>
+                <Card.Text className={styles.Description}>
+                  As a developer, I am always striving to learn more so that I
+                  can do more. I hope to find an opportunity where I can
+                  continue to develop and add to my skills.
                 </Card.Text>
-                <Form.Group>
-                  <Form.Text className="relative mb-4">
-                    <Form.Label htmlFor="name" className="">
-                      Name
-                    </Form.Label>
-                    <Form.Control
-                      type="text"
-                      id="name"
-                      name="name"
-                      className=""
-                    />
-                  </Form.Text>
+                <Form.Group className="relative mb-2">
+                  <Form.Label
+                    htmlFor="name"
+                    className={styles.Label}
+                    onChange={(e) => setName(e.target.value)}
+                  >
+                    Name
+                  </Form.Label>
+                  <Form.Control type="text" id="name" name="name" />
                 </Form.Group>
-                <Form.Group className="relative mb-4">
-                  <Form.Label htmlFor="email" className="">
+                <Form.Group className="relative mb-2">
+                  <Form.Label
+                    htmlFor="email"
+                    className={styles.Label}
+                    onChange={(e) => setEmail(e.target.value)}
+                  >
                     Email
                   </Form.Label>
-                  <Form.Control
-                    type="email"
-                    id="email"
-                    name="email"
-                    className=""
-                  />
+                  <Form.Control type="email" id="email" name="email" />
                 </Form.Group>
-                <Form.Group className="relative mb-4">
+                <Form.Group className="relative mb-2">
                   <Form.Label
                     htmlFor="message"
-                    className="leading-7 text-sm text-gray-400"
+                    className={styles.Label}
+                    onChange={(e) => setMessage(e.target.value)}
                   >
                     Message
                   </Form.Label>
@@ -103,14 +117,13 @@ const Contact = () => {
                     aria-label="With textarea"
                     id="message"
                     name="message"
-                    className=""
                   />
                 </Form.Group>
-                <Container className={`${styles.ButtonContainer} d-grid gap-2`}>
+                <Container>
                   <Button
                     type="submit"
                     size="lg"
-                    className={`${styles.Button} btn border-0`}
+                    className={`${styles.Button} mt-3 btn border-0`}
                   >
                     Submit
                   </Button>
@@ -119,13 +132,12 @@ const Contact = () => {
             </Card>
           </Col>
         </Row>
-        <Row className="m-auto w-100">
+        <Row className="m-auto py-3 w-100">
           <Card.Body>
             <iframe
               width="100%"
               height="100%"
               title="map"
-              className="absolute inset-0"
               frameBorder={0}
               marginHeight={0}
               marginWidth={0}
@@ -137,6 +149,4 @@ const Contact = () => {
       </CardGroup>
     </Container>
   );
-};
-
-export default Contact;
+}

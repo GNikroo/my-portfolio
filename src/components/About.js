@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Container, ListGroup, NavLink, Row } from "react-bootstrap";
+import { Card, Col, Container, ListGroup, Row } from "react-bootstrap";
 import styles from "../styles/About.module.css";
 import appStyles from "../App.module.css";
 
@@ -11,26 +11,9 @@ const About = () => {
       >
         <Card.Body>
           <Card.Title className={`${appStyles.Title} card-title`}>
-            Gina Nikroo
+            About Me
           </Card.Title>
         </Card.Body>
-        <Row className="text-center">
-          <Col>
-            <NavLink href="#contact" className={`${styles.Links} text-nowrap`}>
-              contact me
-            </NavLink>
-          </Col>
-          <Col>
-            <NavLink href="#projects" className={`${styles.Links} text-nowrap`}>
-              see my work
-            </NavLink>
-          </Col>
-          <Col>
-            <NavLink href="#skills" className={`${styles.Links} text-nowrap`}>
-              see my skills
-            </NavLink>
-          </Col>
-        </Row>
         <Row>
           <ListGroup className={`${styles.List} p-4 d-flex align-items-center`}>
             <Col lg={8} md={10} className="rounded py-2">

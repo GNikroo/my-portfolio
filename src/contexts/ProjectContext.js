@@ -1,21 +1,19 @@
 import { projects } from "../data";
-import Carousel from "react-bootstrap/Carousel";
-import NavLink from "react-bootstrap/NavLink";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import carouselStyles from "../styles/ProjectCarousel.module.css";
+import { Carousel } from "react-bootstrap";
+import { NavLink } from "react-bootstrap";
+import { Col } from "react-bootstrap";
+import { Image } from "react-bootstrap";
+import styles from "../styles/ProjectContext.module.css";
 
 export const SmallScreenSize = (props) => {
   const { mobile } = props;
 
   const ProjectDetailsMobile = ({ link, title, subtitle, description }) => (
     <>
-      <Col
-        className={`${carouselStyles.Caption} ${carouselStyles.MobileCaption} pb-5`}
-      >
+      <Col className={`${styles.Caption} ${styles.MobileCaption} mx-auto pb-5`}>
         <NavLink href={link} className="text-decoration-none" target="blank">
           <h3>{title}</h3>
-          <p className={carouselStyles.Subtitle}>{subtitle}</p>
+          <p className={styles.Subtitle}>{subtitle}</p>
           <p>{description}</p>
         </NavLink>
       </Col>
@@ -24,20 +22,16 @@ export const SmallScreenSize = (props) => {
 
   const ProjectDetailsDesktop = ({ link, title, subtitle, image, alt }) => (
     <>
-      <Col
-        className={`${carouselStyles.Caption} ${carouselStyles.DesktopCaption}`}
-      >
+      <Col className={`${styles.Caption} ${styles.DesktopCaption}`}>
         <NavLink href={link} className="text-decoration-none" target="blank">
           <h3>{title}</h3>
-          <p className={carouselStyles.Subtitle}>{subtitle}</p>
+          <p className={styles.Subtitle}>{subtitle}</p>
         </NavLink>
       </Col>
-      <Col className="w-100">
-        <Image
-          className={`${carouselStyles.Image} m-auto justify-content-around w-100`}
-          src={image}
-          alt={alt}
-        />
+      <Col className={`${styles.imageCol} mx-auto`}>
+        <NavLink href={link} target="blank">
+          <Image className={`${styles.Image} w-100`} src={image} alt={alt} />
+        </NavLink>
       </Col>
     </>
   );
@@ -46,7 +40,7 @@ export const SmallScreenSize = (props) => {
     <>
       {mobile ? (
         <Carousel
-          className="d-flex justify-content-around"
+          className="d-flex"
           slide={false}
           interval={10000}
           touch={true}
@@ -56,7 +50,7 @@ export const SmallScreenSize = (props) => {
           {projects.map((project) => (
             <Carousel.Item
               key={project.title}
-              className={`${carouselStyles.Item} m-auto pt-4`}
+              className={`${styles.Item} pt-4`}
             >
               <ProjectDetailsMobile {...project} />
             </Carousel.Item>
@@ -64,7 +58,7 @@ export const SmallScreenSize = (props) => {
         </Carousel>
       ) : (
         <Carousel
-          className="d-flex justify-content-around"
+          className="d-flex"
           slide={false}
           interval={10000}
           touch={true}
@@ -73,7 +67,7 @@ export const SmallScreenSize = (props) => {
           {projects.map((project) => (
             <Carousel.Item
               key={project.title}
-              className={`${carouselStyles.Item} m-auto pt-5`}
+              className={`${styles.Item} pt-5`}
             >
               <ProjectDetailsDesktop {...project} />
             </Carousel.Item>

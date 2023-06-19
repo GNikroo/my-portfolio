@@ -14,12 +14,14 @@ const Skills = () => {
   return (
     <Container id="skills" className={appStyles.Section}>
       <Card className={`${styles.Skills} border-0`}>
-        <Card.Title className={`${appStyles.Title} pb-2 d-block text-center`}>
+        <Card.Title
+          className={`${appStyles.Title} pb-2 py-3 d-block text-center`}
+        >
           Skills &amp; Technologies
         </Card.Title>
       </Card>
       <Row>
-        <Col lg={2} md={4} sm={2} className="mx-auto pb-5">
+        <Col lg={2} md={4} className={`${styles.Col} mx-auto pb-5`}>
           <ListGroup className={appStyles.Color1}>
             <Card.Subtitle className={styles.Subtitle}>Languages</Card.Subtitle>
             <ListGroup.Item className={styles.Item}>
@@ -33,7 +35,7 @@ const Skills = () => {
             </ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col lg={2} md={4} sm={2} className="mx-auto pb-5">
+        <Col lg={2} md={4} className={`${styles.Col} mx-auto pb-5`}>
           <ListGroup className={appStyles.Color2}>
             <Card.Subtitle className={styles.Subtitle}>
               Frameworks
@@ -49,7 +51,7 @@ const Skills = () => {
             </ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col lg={2} md={4} sm={2} className="mx-auto pb-5">
+        <Col lg={2} md={4} className={`${styles.Col} mx-auto pb-5`}>
           <ListGroup className={appStyles.Color3}>
             <Card.Subtitle className={styles.Subtitle}>
               Version Control
@@ -65,7 +67,7 @@ const Skills = () => {
             </ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col lg={2} md={4} sm={2} className="mx-auto pb-5">
+        <Col lg={2} md={4} className={`${styles.Col} mx-auto pb-5`}>
           <ListGroup className={appStyles.Color4}>
             <Card.Subtitle className={styles.Subtitle}>
               Database Systems
@@ -81,7 +83,7 @@ const Skills = () => {
             </ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col lg={2} md={4} sm={2} className="mx-auto pb-5">
+        <Col lg={2} md={4} className={`${styles.Col} mx-auto pb-5`}>
           <ListGroup className={appStyles.Color5}>
             <Card.Subtitle className={styles.Subtitle}>IDE</Card.Subtitle>
             <ListGroup.Item className={styles.Item}>

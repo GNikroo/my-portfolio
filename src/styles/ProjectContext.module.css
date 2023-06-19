@@ -1,0 +1,46 @@
+h3 {
+    font-size: 1.4rem;
+}
+
+.Subtitle {
+    font-weight: bold;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    color: #D8E2DC;
+}
+
+.Caption p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.Caption {
+    text-align: center;
+    color: #FAE1DD;
+}
+
+.MobileCaption {
+    min-height: 13.2rem;
+    width: 18rem;
+}
+
+.DesktopCaption {
+    min-height: 7rem;
+}
+
+.Image {
+    height: 40rem;
+    padding: 0rem 0 3.5rem;
+}
+
+.imageCol {
+    width: 30rem;
+}
+
+.Item {
+    white-space: pre-wrap;
+}
+
+.Navlink {
+    color: #FAE1DD;
+}

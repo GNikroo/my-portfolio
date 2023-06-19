@@ -9,7 +9,6 @@
 }
 
 .Item {
-    padding: 1rem;
     color: #1b2835 !important;
     background-color: #ffede4;
 }
@@ -17,4 +16,16 @@
 .BulletList::before {
     content: "•";
     padding-right: .5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .Col {
+        padding: 0 10rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .Col {
+        padding: 0 4rem;
+    }
 }

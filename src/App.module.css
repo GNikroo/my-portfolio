@@ -1,5 +1,5 @@
 .App {
-    background-color: #938b8a;
+    background-color: #676362;
     margin: 0;
     color: #D8E2DC;
 }
@@ -8,6 +8,7 @@
     font-weight: 400;
     font-size: 2rem;
     color: #1b2835;
+    background-color: inherit;
     text-shadow: 0px 1px 4px #F8EDEB;
 }
 

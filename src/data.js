@@ -3,11 +3,13 @@ import img2 from "./assets/nosweat.jpg";
 import img3 from "./assets/hidden.jpg";
 import img4 from "./assets/memory.jpg";
 import img5 from "./assets/wellness.jpg";
+import modjs from "./assets/modernjs-cert.png";
+import python from "./assets/python-cert.jpeg";
 
 export const projects = [
   {
     link: "https://wordshare.herokuapp.com/",
-    title: "Word Share \nFrontend",
+    title: "Word Share Frontend",
     subtitle: "HTML5, CSS with React Boostrap, ReactJS",
     description:
       "A creative space for authors and artisits to share your thoughts, ideas, and projects.",
@@ -16,7 +18,7 @@ export const projects = [
   },
   {
     link: "https://ws-api.herokuapp.com/",
-    title: "Word Share \nBackend",
+    title: "Word Share Backend",
     subtitle: "Django Rest Framework, Postrgres DB",
     description: "The backend for Word Share",
     image: img1,
@@ -26,7 +28,7 @@ export const projects = [
     link: "https://no-sweat-fitforum.herokuapp.com/",
     title: "No Sweat!",
     subtitle:
-      "HTML5, CSS with Bootstrap, Python,\nDjango Rest Framework, Postgres DB",
+      "HTML5, CSS with Bootstrap, Python,Django Rest Framework, Postgres DB",
     description:
       "A fitness forum for beginners and experts to exchange tips, experiences, and support.",
     image: img2,
@@ -57,6 +59,21 @@ export const projects = [
       "A static website dedicated to helping a beginner understand how to approach their health in a holistic way.",
     image: img5,
     alt: "Wellness",
+  },
+];
+
+export const certificates = [
+  {
+    institution: "ui.dev",
+    course: "Modern JavaScript",
+    date: "June 12, 2023",
+    image: modjs,
+  },
+  {
+    institution: "Udemy",
+    course: "The Python Bible",
+    date: "August 22, 2022",
+    image: python,
   },
 ];
 

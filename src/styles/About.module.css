@@ -9,16 +9,9 @@
 
 .Links {
     font-weight: 600;
+    padding-bottom: .5rem;
     text-shadow: -1px 1px 2px #6e7b73;
     color: #D8E2DC;
-}
-
-.Links:hover {
-    color: #FEC5BB;
-}
-
-.Links:active {
-    color: #eea79a;
 }
 
 .List {

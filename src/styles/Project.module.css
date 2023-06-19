@@ -1,0 +1,25 @@
+.Projects {
+    background-color: transparent;
+}
+
+.DesktopVisibility {
+    visibility: visible;
+    display: block;
+}
+
+.MobileVisibility {
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .DesktopVisibility {
+        display: none;
+        visibility: hidden;
+    }
+
+    .MobileVisibility {
+        display: block;
+        visibility: visible;
+    }
+}
