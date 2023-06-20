@@ -114,18 +114,19 @@ const Contact = () => {
             </Card>
           </Col>
         </Row>
-        <Row className="m-auto py-3 w-100">
+        <Row className="m-auto p-3 w-100">
           <Card.Body>
             <iframe
-              width="100%"
-              height="100%"
-              title="map"
-              frameBorder={0}
-              marginHeight={0}
-              marginWidth={0}
-              style={{ filter: "opacity(0.7)" }}
-              src="https://www.google.com/maps/embed/v1/view?zoom=10¢er=59.3293,18.0686&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-            />
+                title="map"  
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d65118.06237581816!2d18.066014112133303!3d59.33396474234963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1687270474264!5m2!1sen!2sse" 
+                width="100%"
+                height="100%"
+                className="border-0"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
           </Card.Body>
         </Row>
       </CardGroup>
