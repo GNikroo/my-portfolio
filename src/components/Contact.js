@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <Container
       id="contact"
-      className={`${appStyles.Section} text-center text-xl-start`}
+      className={`${appStyles.Section} text-center`}
     >
       <Card className={`${styles.Contact} border-0`}>
         <Card.Title className={`${appStyles.Title} pb-2 d-block text-center`}>
@@ -41,7 +41,8 @@ const Contact = () => {
         <Row className="py-3 justify-content-center">
           <Col lg={7}>
             <Card className={`${styles.FormContainer} border-0 mx-auto px-3`}>
-              <Form netlify="true" name="contact" onSubmit={handleSubmit}>
+              <Form data-netlify="true" name="contact" onSubmit={handleSubmit}>
+              <input type="hidden" name="form-name" value="contact" />
                 <Card.Title className={styles.Subtitle}>Contact Me</Card.Title>
                 <Card.Text className={styles.Description}>
                   As a developer, I am always striving to learn more so that I
@@ -54,21 +55,29 @@ const Contact = () => {
                             <Form.Label
                                 htmlFor="name"
                                 className={styles.Label}
-                                onChange={(e) => setName(e.target.value)}
                             >
                                 Name
                             </Form.Label>
-                            <Form.Control type="text" id="name" name="name" />
+                            <Form.Control 
+                                type="text"
+                                id="name"
+                                name="name"
+                                onChange={(e) => setName(e.target.value)}
+                            />
                         </Form.Group>
                         <Form.Group className="relative mb-2">
                             <Form.Label
                                 htmlFor="email"
                                 className={styles.Label}
-                                onChange={(e) => setEmail(e.target.value)}
                             >
                                 Email
                             </Form.Label>
-                            <Form.Control type="email" id="email" name="email" />
+                            <Form.Control 
+                                type="email"
+                                id="email"
+                                name="email"
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
                         </Form.Group>
                     </Col>
                     <Col md={6} sm={1}>
@@ -76,11 +85,11 @@ const Contact = () => {
                             <Form.Label
                                 htmlFor="message"
                                 className={styles.Label}
-                                onChange={(e) => setMessage(e.target.value)}
                             >
                                 Message
                             </Form.Label>
                             <Form.Control
+                                onChange={(e) => setMessage(e.target.value)}
                                 as="textarea"
                                 aria-label="With textarea"
                                 id="message"
