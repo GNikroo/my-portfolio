@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Button, Card, CardGroup, Col, Container, Form, NavLink, Row } from "react-bootstrap";
+import { Button, Card, CardGroup, Col, Container, Form, Row } from "react-bootstrap";
 import appStyles from "../App.module.css";
-import photo from "../assets/GinaNikroo.jpg";
 import styles from "../styles/Contact.module.css";
 
 const Contact = () => {
@@ -39,37 +38,9 @@ const Contact = () => {
         </Card.Title>
       </Card>
       <CardGroup>
-        <Row className="py-3">
-          <Col>
-            <Card className={`${styles.Contact} border-0`}>
-              <Row className="align-items-center m-auto">
-                <Col className="text-center">
-                  <Card.Img
-                    className={`${styles.Image} m-auto rounded`}
-                    src={photo}
-                  />
-                </Col>
-                <Col>
-                  <Card.Body>
-                    <Card.Title className={`${styles.Title} card-title`}>
-                    Junior Full-Stack Developer
-                    </Card.Title>
-                    <Card.Text>
-                      <NavLink
-                        href="mailto:gina.nikroo@gmail.com"
-                        className="py-2"
-                      >
-                        gina.nikroo@gmail.com
-                      </NavLink>
-                      <NavLink href="tel:+46707463887">070 746 3887</NavLink>
-                    </Card.Text>
-                  </Card.Body>
-                </Col>
-              </Row>
-            </Card>
-          </Col>
-          <Col className="align-self-center">
-            <Card className={`${styles.FormContainer} border-0 m-auto px-3`}>
+        <Row className="py-3 justify-content-center">
+          <Col lg={7}>
+            <Card className={`${styles.FormContainer} border-0 mx-auto px-3`}>
               <Form netlify="true" name="contact" onSubmit={handleSubmit}>
                 <Card.Title className={styles.Subtitle}>Contact Me</Card.Title>
                 <Card.Text className={styles.Description}>
@@ -77,41 +48,48 @@ const Contact = () => {
                   can do more. I hope to find an opportunity where I can
                   continue to develop and add to my skills.
                 </Card.Text>
-                <Form.Group className="relative mb-2">
-                  <Form.Label
-                    htmlFor="name"
-                    className={styles.Label}
-                    onChange={(e) => setName(e.target.value)}
-                  >
-                    Name
-                  </Form.Label>
-                  <Form.Control type="text" id="name" name="name" />
-                </Form.Group>
-                <Form.Group className="relative mb-2">
-                  <Form.Label
-                    htmlFor="email"
-                    className={styles.Label}
-                    onChange={(e) => setEmail(e.target.value)}
-                  >
-                    Email
-                  </Form.Label>
-                  <Form.Control type="email" id="email" name="email" />
-                </Form.Group>
-                <Form.Group className="relative mb-2">
-                  <Form.Label
-                    htmlFor="message"
-                    className={styles.Label}
-                    onChange={(e) => setMessage(e.target.value)}
-                  >
-                    Message
-                  </Form.Label>
-                  <Form.Control
-                    as="textarea"
-                    aria-label="With textarea"
-                    id="message"
-                    name="message"
-                  />
-                </Form.Group>
+                <Row className="px-3">
+                    <Col md={6} sm={1}>
+                        <Form.Group className="relative mb-2">
+                            <Form.Label
+                                htmlFor="name"
+                                className={styles.Label}
+                                onChange={(e) => setName(e.target.value)}
+                            >
+                                Name
+                            </Form.Label>
+                            <Form.Control type="text" id="name" name="name" />
+                        </Form.Group>
+                        <Form.Group className="relative mb-2">
+                            <Form.Label
+                                htmlFor="email"
+                                className={styles.Label}
+                                onChange={(e) => setEmail(e.target.value)}
+                            >
+                                Email
+                            </Form.Label>
+                            <Form.Control type="email" id="email" name="email" />
+                        </Form.Group>
+                    </Col>
+                    <Col md={6} sm={1}>
+                        <Form.Group className="relative mb-2">
+                            <Form.Label
+                                htmlFor="message"
+                                className={styles.Label}
+                                onChange={(e) => setMessage(e.target.value)}
+                            >
+                                Message
+                            </Form.Label>
+                            <Form.Control
+                                as="textarea"
+                                aria-label="With textarea"
+                                id="message"
+                                name="message"
+                                rows={5}
+                            />
+                        </Form.Group>
+                    </Col>
+                </Row>
                 <Container>
                   <Button
                     type="submit"
