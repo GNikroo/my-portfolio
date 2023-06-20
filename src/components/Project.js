@@ -5,7 +5,7 @@ import { SmallScreenSize } from "../contexts/ProjectContext";
 import styles from "../styles/Project.module.css";
 import appStyles from "../App.module.css";
 
-function Project() {
+const Project = () => {
   return (
     <Container id="projects" className={`${appStyles.Section} mx-auto`}>
       <Card className={`${styles.Projects} border-0`}>
@@ -23,6 +23,6 @@ function Project() {
       </Card>
     </Container>
   );
-}
+};
 
 export default Project;

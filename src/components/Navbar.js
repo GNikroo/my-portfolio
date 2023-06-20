@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
+import { Button } from "react-bootstrap";
+import { Offcanvas } from "react-bootstrap";
 import styles from "../styles/NavBar.module.css";
 
-export default function NavBar() {
+const NavBar = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -99,4 +99,6 @@ export default function NavBar() {
       </Navbar>
     </>
   );
-}
+};
+
+export default NavBar;

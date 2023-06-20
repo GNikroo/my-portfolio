@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, NavLink } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { NavLink } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { Image } from "react-bootstrap";
 import styles from "../styles/Certificates.module.css";

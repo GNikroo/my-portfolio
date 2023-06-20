@@ -1,5 +1,9 @@
 import React from "react";
-import { Card, Col, Container, ListGroup, Row } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import styles from "../styles/About.module.css";
 import appStyles from "../App.module.css";
 

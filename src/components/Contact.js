@@ -11,7 +11,7 @@ import styles from "../styles/Contact.module.css";
 import appStyles from "../App.module.css";
 import photo from "../assets/GinaNikroo.jpg";
 
-export default function Contact() {
+const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -149,4 +149,6 @@ export default function Contact() {
       </CardGroup>
     </Container>
   );
-}
+};
+
+export default Contact;
