@@ -1,9 +1,8 @@
+import { Card, Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
-import { Container } from "react-bootstrap";
-import { Card } from "react-bootstrap";
+import appStyles from "../App.module.css";
 import { SmallScreenSize } from "../contexts/ProjectContext";
 import styles from "../styles/Project.module.css";
-import appStyles from "../App.module.css";
 
 const Project = () => {
   return (
