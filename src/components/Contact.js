@@ -124,7 +124,7 @@ const Contact = () => {
               marginHeight={0}
               marginWidth={0}
               style={{ filter: "opacity(0.7)" }}
-              src="https://www.google.com/maps/embed/v1/place?q=Finntorp,+Sweden&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              src="https://www.google.com/maps/embed/v1/view?zoom=10¢er=59.3293,18.0686&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
             />
           </Card.Body>
         </Row>
