@@ -62,6 +62,7 @@ const Contact = () => {
                                 type="text"
                                 id="name"
                                 name="name"
+                                autoComplete="given-name"
                                 onChange={(e) => setName(e.target.value)}
                             />
                         </Form.Group>
@@ -76,6 +77,7 @@ const Contact = () => {
                                 type="email"
                                 id="email"
                                 name="email"
+                                autoComplete="email"
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </Form.Group>
