@@ -1,15 +1,8 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
-import { Card } from "react-bootstrap";
-import { CardGroup } from "react-bootstrap";
-import { Col } from "react-bootstrap";
-import { Container } from "react-bootstrap";
-import { Form } from "react-bootstrap";
-import { NavLink } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-import styles from "../styles/Contact.module.css";
+import { Button, Card, CardGroup, Col, Container, Form, NavLink, Row } from "react-bootstrap";
 import appStyles from "../App.module.css";
 import photo from "../assets/GinaNikroo.jpg";
+import styles from "../styles/Contact.module.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -59,7 +52,7 @@ const Contact = () => {
                 <Col>
                   <Card.Body>
                     <Card.Title className={`${styles.Title} card-title`}>
-                      Junior Software Developer
+                    Junior Full-Stack Developer
                     </Card.Title>
                     <Card.Text>
                       <NavLink

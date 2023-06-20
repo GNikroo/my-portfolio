@@ -1,11 +1,37 @@
-import img1 from "./assets/wordshare.jpg";
-import img2 from "./assets/nosweat.jpg";
 import img3 from "./assets/hidden.jpg";
 import img4 from "./assets/memory.jpg";
-import img5 from "./assets/wellness.jpg";
 import modjs from "./assets/modernjs-cert.png";
+import img2 from "./assets/nosweat.jpg";
 import python from "./assets/python-cert.jpeg";
+import img5 from "./assets/wellness.jpg";
+import img1 from "./assets/wordshare.jpg";
 
+export const about = [
+  {
+    subtitle: "Education",
+    description: `Since 2022, I have been studying at Code Institute to become a
+junior developer. I have completed my coursework to
+earn a Diploma in Full Stack Software Development and am
+currently awaiting my diploma.`,
+  },
+  {
+    subtitle: "Skill Development",
+    description: `I have thirteen years of early childhood education experience in
+international preschools located across Stockholm. As a
+preschool teacher, I have cultivated valuable interpersonal
+skills working with students and colleagues alike. I have become
+particularly adept at problem-solving, divergent thinking,
+active listening, and collaborative work.`,
+  },
+  {
+    subtitle: "My Goals",
+    description: `I have a solid foundation in both front-end and back-end
+development encompassing HTML, CSS, JavaScript, and Python. I am
+excited to enter the tech industry and work with a team where I
+can utilize my diverse experiences and dedication to continuous
+learning to make meaningful contributions.`,
+  },
+];
 export const projects = [
   {
     link: "https://wordshare.herokuapp.com/",

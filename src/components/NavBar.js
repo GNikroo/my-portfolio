@@ -1,9 +1,5 @@
 import { useState } from "react";
-import { Container } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
-import { Navbar } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-import { Offcanvas } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import styles from "../styles/NavBar.module.css";
 
 const NavBar = () => {
@@ -23,7 +19,7 @@ const NavBar = () => {
             Gina Nikroo
             <span className={`${styles.Description} d-none d-md-inline`}>
               <i className="text-white px-3 fa-solid fa-code-commit"></i> Junior
-              Fullstack Developer
+              Full-Stack Developer
             </span>
           </Navbar.Brand>
           <Nav className={styles.Collapse} id="basic-navbar-nav">
