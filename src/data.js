@@ -111,4 +111,4 @@ export const versionControls = ["GitHub", "Git"];
 
 export const databaseSystems = ["MySQL", "PostgreSql"];
 
-export const developmentEnvirons = ["Gitpod", "Visual Studio Code"];
+export const developmentEnvirons = ["Gitpod", "VS Code"];

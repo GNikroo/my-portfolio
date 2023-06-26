@@ -85,7 +85,7 @@ const Skills = () => {
                 </Col>
                 <Col lg={2} md={4} className={`${styles.Col} mx-auto pb-5`}>
                 <ListGroup className={appStyles.Color5}>
-                    <Card.Subtitle className={`${styles.Subtitle} lead`}>IDE</Card.Subtitle>
+                    <Card.Subtitle className={`${styles.Subtitle} lead`}>IDE/Text Editor</Card.Subtitle>
                     <ListGroup.Item className={styles.Item}>
                     {developmentEnvirons.map((developmentEnviron) => (
                         <div key={developmentEnviron}>
