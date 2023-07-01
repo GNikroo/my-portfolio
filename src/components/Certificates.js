@@ -1,11 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { NavLink } from "react-bootstrap";
-import { Card } from "react-bootstrap";
-import { Image } from "react-bootstrap";
-import styles from "../styles/Certificates.module.css";
+import { Card, Container, Image, NavLink } from "react-bootstrap";
 import appStyles from "../App.module.css";
 import { certificates } from "../data";
+import styles from "../styles/Certificates.module.css";
 
 const Certificates = () => {
   return (
@@ -26,7 +23,7 @@ const Certificates = () => {
                   {certificate.course}
                 </Card.Text>
               </NavLink>
-              <Image className="d-none" src={certificate.image} />
+              <Image className="d-none" height="400" width="600" src={certificate.image} />
             </div>
           ))}
         </Card.Body>

@@ -1,3 +1,4 @@
+import fullstack from "./assets/fullstackdiploma.png";
 import img3 from "./assets/hidden.jpg";
 import img4 from "./assets/memory.jpg";
 import modjs from "./assets/modernjs-cert.png";
@@ -5,6 +6,8 @@ import img2 from "./assets/nosweat.jpg";
 import python from "./assets/python-cert.jpeg";
 import img5 from "./assets/wellness.jpg";
 import img1 from "./assets/wordshare.jpg";
+
+
 
 export const about = [
   {
@@ -89,12 +92,18 @@ export const projects = [
 ];
 
 export const certificates = [
-  {
+{
+    institution: "Code Institute",
+    course: "Diploma in Full Stack Development: Advanced Front End",
+    date: "June 30, 2023",
+    image: fullstack,
+},
+{
     institution: "ui.dev",
     course: "Modern JavaScript",
     date: "June 12, 2023",
     image: modjs,
-  },
+},
   {
     institution: "Udemy",
     course: "The Python Bible",
