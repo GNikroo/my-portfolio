@@ -7,32 +7,25 @@ import python from "./assets/python-cert.jpeg";
 import img5 from "./assets/wellness.jpg";
 import img1 from "./assets/wordshare.jpg";
 
-
-
 export const about = [
   {
     subtitle: "Education",
-    description: `Since 2022, I have been studying at Code Institute to become a
-junior developer. I have completed my coursework to
-earn a Diploma in Full Stack Software Development and am
-currently awaiting my diploma.`,
+    description: `In June 2023, I have earned a Diploma in Full Stack Software Development with a specialization in advanced front end fromt Code Institute. I also have an Associate of Science in Early Childhood Education and Teaching.`,
   },
   {
-    subtitle: "Skill Development",
+    subtitle: "Skills",
     description: `I have thirteen years of early childhood education experience in
 international preschools located across Stockholm. As a
 preschool teacher, I have cultivated valuable interpersonal
-skills working with students and colleagues alike. I have become
-particularly adept at problem-solving, divergent thinking,
+skills working with students and colleagues alike. I have become adept at problem-solving, divergent thinking,
 active listening, and collaborative work.`,
   },
   {
-    subtitle: "My Goals",
+    subtitle: "Goals",
     description: `I have a solid foundation in both front-end and back-end
-development encompassing HTML, CSS, JavaScript, and Python. I am
-excited to enter the tech industry and work with a team where I
+development encompassing HTML, CSS, JavaScript, and Python. I hope to work with a team where I
 can utilize my diverse experiences and dedication to continuous
-learning to make meaningful contributions.`,
+learning so that I may make meaningful contributions.`,
   },
 ];
 export const projects = [
@@ -92,18 +85,18 @@ export const projects = [
 ];
 
 export const certificates = [
-{
+  {
     institution: "Code Institute",
     course: "Diploma in Full Stack Development: Advanced Front End",
     date: "June 30, 2023",
     image: fullstack,
-},
-{
+  },
+  {
     institution: "ui.dev",
     course: "Modern JavaScript",
     date: "June 12, 2023",
     image: modjs,
-},
+  },
   {
     institution: "Udemy",
     course: "The Python Bible",
