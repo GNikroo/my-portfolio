@@ -59,28 +59,35 @@ const NavBar = () => {
           <Offcanvas.Body>
             <Link
               onClick={toggleCanvasOff}
-              to="#projects"
+              to="/about"
+              className={`${styles.Links} row pb-3`}
+            >
+              About
+            </Link>
+            <Link
+              onClick={toggleCanvasOff}
+              to="/projects"
               className={`${styles.Links} row pb-3`}
             >
               Projects
             </Link>
             <Link
               onClick={toggleCanvasOff}
-              to="#certifications"
+              to="/certificates"
               className={`${styles.Links} row pb-3`}
             >
               Certifications
             </Link>
             <Link
               onClick={toggleCanvasOff}
-              to="#skills"
+              to="/skills"
               className={`${styles.Links} row pb-3`}
             >
               Skills
             </Link>
             <Link
               onClick={toggleCanvasOff}
-              to="#contact"
+              to="/contact"
               className={`${styles.Links} row pb-3`}
             >
               Contact
