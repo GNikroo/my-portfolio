@@ -23,8 +23,9 @@
 
 .DesktopCard {
     width: 15rem;
-    margin: 25rem auto 0 auto;
-    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
     background-color: transparent;
 }
 

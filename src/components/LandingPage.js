@@ -32,11 +32,8 @@ const LandingPage = () => {
       className={`${appStyles.Section} ${styles.DesktopContainer}`}
     >
       <Card
-        className={`${styles.DesktopCard} d-flex border-0 text-center py-4`}
+        className={`${styles.DesktopCard} d-flex m-auto border-0 text-center py-4`}
       >
-        <Card.Title className={`${styles.Title} rounded`}>
-          Gina Nikroo
-        </Card.Title>
         <Link to="/about" className={`${styles.Link} text-decoration-none`}>
           view me
         </Link>

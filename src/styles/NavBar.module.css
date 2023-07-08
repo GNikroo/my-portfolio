@@ -3,20 +3,20 @@
 }
 
 .Title {
-    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #d231d7;
+}
+
+.Title:hover {
     color: #cd56d2;
-}
-
-.Title:hover {
-    color: #FEC5BB;
-}
-
-.Title:hover {
-    color: #FEC5BB;
+    text-shadow: 0 0 2px #e53feb;
 }
 
 .Title:active {
-    color: #FDA99A;
+    color: #cd56d2;
+    transform: scale(1.01);
 }
 
 .Subtitle {
@@ -43,10 +43,11 @@
 }
 
 .Links {
+    font-weight: 600;
     text-decoration: none;
     padding: 0rem 1rem;
-    font-size: .9rem;
-    color: #ce4365;
+    font-size: 1.1rem;
+    color: #e35d8c;
 }
 
 .Links:hover {

@@ -52,7 +52,7 @@ const NavBar = () => {
           <i className="fa-solid fa-bars"></i>
         </Button>
         <Offcanvas
-          className={styles.Offcanvas}
+          className={`${styles.Offcanvas}`}
           show={show}
           onHide={handleClose}
         >
@@ -61,28 +61,28 @@ const NavBar = () => {
             <NavLink
               onClick={toggleCanvasOff}
               to="#projects"
-              className={`${styles.Links} pb-3`}
+              className={`${styles.Links} row pb-3`}
             >
               Projects
             </NavLink>
             <NavLink
               onClick={toggleCanvasOff}
               to="#certifications"
-              className={`${styles.Links} pb-3`}
+              className={`${styles.Links} row pb-3`}
             >
               Certifications
             </NavLink>
             <NavLink
               onClick={toggleCanvasOff}
               to="#skills"
-              className={`${styles.Links} pb-3`}
+              className={`${styles.Links} row pb-3`}
             >
               Skills
             </NavLink>
             <NavLink
               onClick={toggleCanvasOff}
               to="#contact"
-              className={`${styles.Links} pb-3`}
+              className={`${styles.Links} row pb-3`}
             >
               Contact
             </NavLink>
