@@ -28,7 +28,7 @@ export const SmallScreenSize = (props) => {
           <p className={styles.Subtitle}>{subtitle}</p>
         </NavLink>
       </Col>
-      <Col className={`${styles.imageCol} mx-auto`}>
+      <Col className={`${styles.ImageCol} mx-auto`}>
         <NavLink href={link} target="blank">
           <Image className={`${styles.Image} w-100`} src={image} alt={alt} />
         </NavLink>
@@ -45,7 +45,6 @@ export const SmallScreenSize = (props) => {
           interval={10000}
           touch={true}
           controls={false}
-          variant="dark"
         >
           {projects.map((project) => (
             <Carousel.Item
@@ -62,13 +61,9 @@ export const SmallScreenSize = (props) => {
           slide={false}
           interval={10000}
           touch={true}
-          variant="dark"
         >
           {projects.map((project) => (
-            <Carousel.Item
-              key={project.title}
-              className={`${styles.Item} pt-5`}
-            >
+            <Carousel.Item key={project.title} className={styles.Item}>
               <ProjectDetailsDesktop {...project} />
             </Carousel.Item>
           ))}

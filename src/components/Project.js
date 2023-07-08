@@ -9,7 +9,7 @@ const Project = () => {
     <Container id="projects" className={`${appStyles.Section} mx-auto`}>
       <Card className={`${styles.Projects} border-0`}>
         <Card.Title className={`${appStyles.Title} d-block text-center`}>
-          Projects
+          projects
         </Card.Title>
         <Card.Body className="p-0">
           <Row className={styles.DesktopVisibility}>

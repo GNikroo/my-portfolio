@@ -39,7 +39,7 @@ const Contact = () => {
     <Container id="contact" className={`${appStyles.Section} text-center`}>
       <Card className={`${styles.Contact} border-0`}>
         <Card.Title className={`${appStyles.Title} pb-2 d-block text-center`}>
-          Contact Me
+          contact
         </Card.Title>
       </Card>
       <CardGroup>
@@ -48,7 +48,6 @@ const Contact = () => {
             <Card className={`${styles.FormContainer} border-0 mx-auto px-3`}>
               <Form data-netlify="true" name="contact" onSubmit={handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
-                <Card.Title className={styles.Subtitle}>Contact Me</Card.Title>
                 <Card.Text className={styles.Description}>
                   As a developer, I am always striving to learn more so that I
                   can do more. I hope to find an opportunity where I can

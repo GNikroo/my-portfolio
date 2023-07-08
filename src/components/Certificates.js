@@ -9,7 +9,7 @@ const Certificates = () => {
     <Container id="certifications" className={`${appStyles.Section} mx-auto`}>
       <Card className={`${styles.Certificates} border-0`}>
         <Card.Title className={`${appStyles.Title} d-block text-center`}>
-          Certifications
+          certifications
         </Card.Title>
         <Card.Body className="py-4 text-center">
           {certificates.map((certificate) => (
@@ -23,7 +23,12 @@ const Certificates = () => {
                   {certificate.course}
                 </Card.Text>
               </NavLink>
-              <Image className="d-none" height="400" width="600" src={certificate.image} />
+              <Image
+                className="d-none"
+                height="400"
+                width="600"
+                src={certificate.image}
+              />
             </div>
           ))}
         </Card.Body>

@@ -19,8 +19,10 @@ const NavBar = () => {
           <Navbar.Brand className={styles.Title}>
             Gina Nikroo
             <span className={`${styles.Description} d-none d-md-inline`}>
-              <i className="text-white px-3 fa-solid fa-code-commit"></i> Junior
-              Full-Stack Developer
+              <i
+                className={`${styles.Commit} px-3 fa-solid fa-code-commit`}
+              ></i>
+              Junior Full-Stack Developer
             </span>
           </Navbar.Brand>
         </Link>
