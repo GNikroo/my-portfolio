@@ -1,9 +1,10 @@
 .NavBar {
-    background-color: #676362;
+    background-color: #00000091;
 }
 
 .Title {
-    color: #a2ccf6;
+    font-size: 1rem;
+    color: #cd56d2;
 }
 
 .Title:hover {
@@ -41,10 +42,17 @@
     background-color: #676362b8;
 }
 
+.Links {
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-size: .9rem;
+    color: #ce4365;
+}
+
 .Links:hover {
-    color: #FEC5BB;
+    color: #1198bd;
 }
 
 .Links:active {
-    color: #eea79a;
+    color: #9b47ab !important;
 }
