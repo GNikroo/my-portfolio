@@ -1,0 +1,47 @@
+.MobileContainer {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/mobilebackground.jpg');
+}
+
+.DesktopContainer {
+    margin-top: 10rem;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/background.jpg');
+}
+
+.MobileCard {
+    width: 13rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: transparent;
+}
+
+.DesktopCard {
+    width: 15rem;
+    margin: 25rem auto 0 auto;
+    min-height: 100vh;
+    background-color: transparent;
+}
+
+.Link {
+    font-family: 'WindSong', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2.5rem;
+    color: inherit;
+    background-color: #000000c2;
+    cursor: pointer;
+}
+
+.Link:hover {
+    color: #ce4365;
+}
+
+.Link:active {
+    color: #9b47ab !important;
+}

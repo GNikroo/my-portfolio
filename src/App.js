@@ -6,16 +6,20 @@ import Certificates from "./components/Certificates";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
     <div className={`${styles.App} mx-auto`}>
       <NavBar />
-      <About />
-      <Project />
-      <Certificates />
-      <Skills />
-      <Contact />
+      <LandingPage />
+      <div className={styles.Content}>
+        <About />
+        <Project />
+        <Certificates />
+        <Skills />
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
