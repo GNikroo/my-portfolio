@@ -3,11 +3,12 @@
 }
 
 .Subtitle {
+    padding-top: 4rem;
     font-size: 1.5rem;
-    color: #e8b5af;
+    color: #d03c29;
 }
 
 .Date {
-    color: #FFE5D9;
+    color: #c78279;
     font-size: 0.8rem;
 }

@@ -16,7 +16,8 @@ h3 {
 
 .Caption {
     text-align: center;
-    color: #FAE1DD;
+    color: #9e83b9;
+    text-shadow: 1px 1px 1px #350c61;
 }
 
 .MobileCaption {
@@ -33,7 +34,7 @@ h3 {
     padding: 0rem 0 3.5rem;
 }
 
-.imageCol {
+.ImageCol {
     width: 30rem;
 }
 

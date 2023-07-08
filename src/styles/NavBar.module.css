@@ -5,8 +5,8 @@
 .Title {
     cursor: pointer;
     font-weight: 500;
-    font-size: 1.1rem;
-    color: #d231d7;
+    font-size: 1rem;
+    color: #8a79ba;
 }
 
 .Title:hover {
@@ -23,6 +23,10 @@
     color: #aec0d3;
     font-size: 1rem;
     padding-left: 2rem;
+}
+
+.Commit {
+    color: whitesmoke;
 }
 
 .Button {
@@ -46,7 +50,7 @@
     font-weight: 600;
     text-decoration: none;
     padding: 0rem 1rem;
-    font-size: 1.1rem;
+    font-size: .9rem;
     color: #e35d8c;
 }
 
