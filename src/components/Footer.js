@@ -6,14 +6,19 @@ import appStyles from "../App.module.css";
 import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
+  const isMobile = window.innerWidth <= 768;
+
+  const FooterDesktop = (
+    <Card.Title className={styles.Title}>
+      Gina Nikroo. All rights Reserved
+    </Card.Title>
+  );
+
   return (
-    <Container
-      id="contact"
-      className={`${appStyles.Section}  p-5 text-center text-xl-start`}
-    >
+    <Container className={`${appStyles.Section} p-5 text-center text-xl-start`}>
       <Card className={`${styles.Footer} text-center border-0`}>
         <Card.Body>
-          <Card.Title className={styles.Title}>Gina Nikroo</Card.Title>
+          {isMobile ? <span></span> : <span>{FooterDesktop}</span>}
           <Card.Text>
             <NavLink
               className="d-inline p-2"

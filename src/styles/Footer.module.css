@@ -1,13 +1,18 @@
 .Footer {
-    background-color: transparent;
+    background-color: #000000c2;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .Title {
-    color: #FEC5BB;
+    font-size: 0.8rem;
+    color: #e0513e;
 }
 
 .Icons {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 3rem;
-    color: #D8E2DC;
+    color: #d8e2dc;
 }
