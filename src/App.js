@@ -7,21 +7,26 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className={`${styles.App} mx-auto`}>
-      <NavBar />
-      <LandingPage />
-      <div className={styles.Content}>
-        <About />
-        <Project />
-        <Certificates />
-        <Skills />
-        <Contact />
-      </div>
-      <Footer />
-    </div>
+    <Router>
+      <div className={`${styles.App} mx-auto`}>
+        <NavBar />
+        <div className={styles.Content}>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/certificates" element={<Certificates />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>{" "}
+    </Router>
   );
 }
 
