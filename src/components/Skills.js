@@ -14,12 +14,12 @@ import styles from "../styles/Skills.module.css";
 const Skills = () => {
   return (
     <Container id="skills" className={`${styles.Section} ${appStyles.Section}`}>
-      <h1 className={`${appStyles.Title} pb-2 d-block text-center`}>
+      <h1 className={`${appStyles.Title} d-block text-center`}>
         skills &amp; technologies
       </h1>
       <Row className="m-auto justify-content-start align-items-center">
         <Col xs={12} md={6} lg={4} className="py-3">
-          <Card className={`${styles.Skills} border-0`}>
+          <Card className={`${styles.Skills} mt-0 border-0`}>
             <img className={styles.Image} src={background} />
             <Card.Body className="py-3">
               <Card.Text className={styles.Subtitle}>

@@ -40,8 +40,8 @@ const Contact = () => {
       id="contact"
       className={`${styles.Section} ${appStyles.Section}`}
     >
-      <h1 className={`${appStyles.Title} pb-2 d-block text-center`}>contact</h1>
-      <Card className={`${styles.Contact} border-0`}>
+      <h1 className={`${appStyles.Title} d-block text-center`}>contact</h1>
+      <Card className={`${styles.Contact} mt-0 border-0`}>
         <Row className="py-1 justify-content-center">
           <Col lg={7}>
             <Card className={`${styles.FormContainer} border-0 mx-auto px-3`}>

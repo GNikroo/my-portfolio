@@ -10,10 +10,10 @@ const Certificates = () => {
       id="certifications"
       className={`${styles.Section} ${appStyles.Section}`}
     >
-      <h1 className={`${appStyles.Title} pb-2 d-block text-center`}>
+      <h1 className={`${appStyles.Title} d-block text-center`}>
         certifications
       </h1>
-      <Card className={`${styles.Certificates} border-0`}>
+      <Card className={`${styles.Certificates} mt-0 border-0`}>
         <Card.Body className="py-4 text-center">
           {certificates.map((certificate) => (
             <div key={certificate.course}>

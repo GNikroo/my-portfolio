@@ -10,10 +10,8 @@ const Project = () => {
       id="projects"
       className={`${styles.Section} ${appStyles.Section}`}
     >
-      <h1 className={`${appStyles.Title} pb-2 d-block text-center`}>
-        projects
-      </h1>
-      <Card className={`${styles.Projects} border-0`}>
+      <h1 className={`${appStyles.Title} d-block text-center`}>projects</h1>
+      <Card className={`${styles.Projects} mt-0 border-0`}>
         <Card.Body className="p-0 border-0">
           <Row className={styles.DesktopVisibility}>
             <SmallScreenSize />
