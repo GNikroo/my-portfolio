@@ -1,25 +1,77 @@
+.Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
 .Skills {
-    background-color: transparent;
+    margin: auto;
+    width: 17rem;
+    height: 18rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.Image {
+    filter: blur(10px);
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 29%;
+    left: 120%;
+    transform: translateX(-50%) scale(4.2);
+}
+
+
+.Image:hover {
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
 }
 
 .Subtitle {
+    font-size: 1.5rem;
     padding: 1rem 0rem;
     text-align: center;
-    color: #24313e;
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+}
+
+.Skills:hover .Subtitle {
+    inset: auto auto 220px 30px;
+    transition: inset 0.3s ease-out;
 }
 
 .Item {
-    color: #1b2835 !important;
-    background-color: #ffede4;
     white-space: nowrap;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: left;
+    padding-top: 1rem;
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+}
+
+.Skills:hover .Item {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
 }
 
 .BulletList::before {
     content: "•";
-    padding-right: .5rem;
-
+    padding-right: 0.5rem;
 }
 
+/* 
 @media only screen and (max-width: 600px) {
     .Col {
         padding: 0 10rem;
@@ -30,4 +82,4 @@
     .Col {
         padding: 0 4rem;
     }
-}
+} */

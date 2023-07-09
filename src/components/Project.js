@@ -6,12 +6,15 @@ import styles from "../styles/Project.module.css";
 
 const Project = () => {
   return (
-    <Container id="projects" className={`${appStyles.Section} mx-auto`}>
+    <Container
+      id="projects"
+      className={`${styles.Section} ${appStyles.Section}`}
+    >
+      <h1 className={`${appStyles.Title} pb-2 d-block text-center`}>
+        projects
+      </h1>
       <Card className={`${styles.Projects} border-0`}>
-        <Card.Title className={`${appStyles.Title} d-block text-center`}>
-          projects
-        </Card.Title>
-        <Card.Body className="p-0">
+        <Card.Body className="p-0 border-0">
           <Row className={styles.DesktopVisibility}>
             <SmallScreenSize />
           </Row>

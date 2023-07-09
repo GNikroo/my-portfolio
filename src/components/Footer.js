@@ -2,7 +2,6 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { NavLink } from "react-bootstrap";
-import appStyles from "../App.module.css";
 import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
@@ -15,8 +14,8 @@ const Footer = () => {
   );
 
   return (
-    <Container className={`${appStyles.Section} p-5 text-center text-xl-start`}>
-      <Card className={`${styles.Footer} text-center border-0`}>
+    <Container className={`${styles.Section} text-center`}>
+      <Card className={`${styles.Footer} border-0`}>
         <Card.Body>
           {isMobile ? <span></span> : <span>{FooterDesktop}</span>}
           <Card.Text>

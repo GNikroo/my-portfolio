@@ -7,12 +7,21 @@
     font-weight: 400;
     font-size: 3rem;
     background-color: inherit;
+    padding-top: 3rem;
+    margin: 0;
+    background-color: transparent;
 }
 
 .Section {
-    padding-top: 5rem;
-    padding-bottom: 2.5rem;
     background-color: transparent;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 94vh;
+    margin-bottom: .5rem;
 }
 
 .Color1 {

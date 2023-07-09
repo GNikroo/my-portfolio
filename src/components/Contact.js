@@ -36,22 +36,21 @@ const Contact = () => {
   }
 
   return (
-    <Container id="contact" className={`${appStyles.Section} text-center`}>
+    <Container
+      id="contact"
+      className={`${styles.Section} ${appStyles.Section}`}
+    >
+      <h1 className={`${appStyles.Title} pb-2 d-block text-center`}>contact</h1>
       <Card className={`${styles.Contact} border-0`}>
-        <Card.Title className={`${appStyles.Title} pb-2 d-block text-center`}>
-          contact
-        </Card.Title>
-      </Card>
-      <CardGroup>
-        <Row className="py-3 justify-content-center">
+        <Row className="py-1 justify-content-center">
           <Col lg={7}>
             <Card className={`${styles.FormContainer} border-0 mx-auto px-3`}>
               <Form data-netlify="true" name="contact" onSubmit={handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
                 <Card.Text className={styles.Description}>
-                  As a developer, I am always striving to learn more so that I
-                  can do more. I hope to find an opportunity where I can
-                  continue to develop and add to my skills.
+                  If you would like to get into contact with me about developer
+                  opportunities, please fill out the form and I'll get back to
+                  you as soon as possible!
                 </Card.Text>
                 <Row className="px-3">
                   <Col md={6} sm={1}>
@@ -96,7 +95,7 @@ const Contact = () => {
                     </Form.Group>
                   </Col>
                 </Row>
-                <Container>
+                <Container className="text-center">
                   <Button
                     type="submit"
                     size="lg"
@@ -109,7 +108,7 @@ const Contact = () => {
             </Card>
           </Col>
         </Row>
-        <Row className="m-auto p-3 w-100">
+        <Row className="m-auto p-2 pb-5 w-100">
           <Card.Body>
             <iframe
               title="map"
@@ -122,7 +121,7 @@ const Contact = () => {
             ></iframe>
           </Card.Body>
         </Row>
-      </CardGroup>
+      </Card>
     </Container>
   );
 };

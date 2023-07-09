@@ -1,12 +1,17 @@
 .Section {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     padding-top: 2rem;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 94vh;
-    margin-bottom: .5rem;
+    overflow: hidden;
+}
+
+.About {
+    margin: auto;
+    position: relative;
+    background-color: transparent;
 }
 
 .Row {

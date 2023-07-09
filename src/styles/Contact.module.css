@@ -1,4 +1,16 @@
+.Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
 .Contact {
+    margin: auto;
+    position: relative;
     background-color: transparent;
 }
 
@@ -12,11 +24,13 @@
 }
 
 .Description {
+    text-align: center;
     color: #D8E2DC;
 }
 
 .Label {
-    color: #FEC5BB;
+    color: #8a79ba;
+    font-weight: 500;
 }
 
 .Image {
@@ -31,10 +45,10 @@
 }
 
 .Button {
-    color: #1b2835;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 1.8rem;
-    background-color: #7e93a8;
+    background-color: #1198bd;
     border-radius: 8px;
     padding: 4px 11px;
     transition: all 200ms;
@@ -42,6 +56,10 @@
 
 }
 
+.Button:active {
+    background-color: #3fb7d9;
+}
+
 .Button:hover {
-    background-color: antiquewhite;
+    background-color: #69daf9;
 }

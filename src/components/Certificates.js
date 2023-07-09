@@ -6,11 +6,14 @@ import styles from "../styles/Certificates.module.css";
 
 const Certificates = () => {
   return (
-    <Container id="certifications" className={`${appStyles.Section} mx-auto`}>
+    <Container
+      id="certifications"
+      className={`${styles.Section} ${appStyles.Section}`}
+    >
+      <h1 className={`${appStyles.Title} pb-2 d-block text-center`}>
+        certifications
+      </h1>
       <Card className={`${styles.Certificates} border-0`}>
-        <Card.Title className={`${appStyles.Title} d-block text-center`}>
-          certifications
-        </Card.Title>
         <Card.Body className="py-4 text-center">
           {certificates.map((certificate) => (
             <div key={certificate.course}>

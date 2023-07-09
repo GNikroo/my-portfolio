@@ -1,4 +1,16 @@
+.Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
 .Projects {
+    margin: auto;
+    position: relative;
     background-color: transparent;
 }
 
