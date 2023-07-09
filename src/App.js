@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
+import NotFound from "./components/NotFound";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <NavBar />
         <div className={styles.Content}>
           <Routes>
+            <Route path="*" element={<NotFound />} />
             <Route path="/" element={<LandingPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Project />} />
@@ -25,7 +27,7 @@ function App() {
           </Routes>
         </div>
         <Footer />
-      </div>{" "}
+      </div>
     </Router>
   );
 }

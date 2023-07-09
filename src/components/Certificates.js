@@ -22,7 +22,11 @@ const Certificates = () => {
                 {certificate.institution}
               </Card.Subtitle>
               <Card.Text className={styles.Date}>{certificate.date}</Card.Text>
-              <Link href={certificate.image} target="_blank">
+              <Link
+                to={certificate.image}
+                className={styles.Link}
+                target="_blank"
+              >
                 <Card.Text className="pb-5 text-decoration-underline">
                   {certificate.course}
                 </Card.Text>

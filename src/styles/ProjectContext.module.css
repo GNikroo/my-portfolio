@@ -30,6 +30,14 @@ h3 {
     min-height: 7rem;
 }
 
+.Link {
+    color: #9e83b9;
+}
+
+.Link:hover {
+    color: #9e83b9;
+}
+
 .Image {
     height: 40rem;
     padding: 0rem 0 3.5rem;

@@ -1,7 +1,7 @@
 .Section {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 2rem;
     position: relative;
@@ -12,6 +12,14 @@
     margin: auto;
     cursor: pointer;
     background-color: transparent;
+}
+
+.Link {
+    color: inherit;
+}
+
+.Link:hover {
+    color: inherit;
 }
 
 .Subtitle {
