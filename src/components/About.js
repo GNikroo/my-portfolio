@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Container id="about" className={`${styles.Section} ${appStyles.Section}`}>
       <h1 className={`${appStyles.Title} d-block text-center`}>about</h1>
-      <Card className={`${styles.About} mt-0 border-0`}>
+      <Card className={`${styles.About} m-auto border-0`}>
         <Row className={`${styles.Row}`}>
           <Col lg={4} className={styles.Column}>
             <div className={`${styles.Item} border-0 py-4 px-2`}>

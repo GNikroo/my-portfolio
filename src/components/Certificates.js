@@ -13,7 +13,7 @@ const Certificates = () => {
       <h1 className={`${appStyles.Title} d-block text-center`}>
         certifications
       </h1>
-      <Card className={`${styles.Certificates} mt-0 border-0`}>
+      <Card className={`${styles.Certificates} m-auto border-0`}>
         <Card.Body className="py-4 text-center">
           {certificates.map((certificate) => (
             <div key={certificate.course}>

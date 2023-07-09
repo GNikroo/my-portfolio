@@ -1,9 +1,9 @@
 import { projects } from "../data";
 import { Carousel } from "react-bootstrap";
-import { NavLink } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Image } from "react-bootstrap";
 import styles from "../styles/ProjectContext.module.css";
+import { Link } from "react-router-dom";
 
 export const SmallScreenSize = (props) => {
   const { mobile } = props;
@@ -11,11 +11,11 @@ export const SmallScreenSize = (props) => {
   const ProjectDetailsMobile = ({ link, title, subtitle, description }) => (
     <>
       <Col className={`${styles.Caption} ${styles.MobileCaption} mx-auto pb-5`}>
-        <NavLink href={link} className="text-decoration-none" target="blank">
+        <Link to={link} className="text-decoration-none" target="blank">
           <h3>{title}</h3>
           <p className={styles.Subtitle}>{subtitle}</p>
           <p>{description}</p>
-        </NavLink>
+        </Link>
       </Col>
     </>
   );
@@ -23,15 +23,15 @@ export const SmallScreenSize = (props) => {
   const ProjectDetailsDesktop = ({ link, title, subtitle, image, alt }) => (
     <>
       <Col className={`${styles.Caption} ${styles.DesktopCaption}`}>
-        <NavLink href={link} className="text-decoration-none" target="blank">
+        <Link to={link} className="text-decoration-none" target="blank">
           <h3>{title}</h3>
           <p className={styles.Subtitle}>{subtitle}</p>
-        </NavLink>
+        </Link>
       </Col>
       <Col className={`${styles.ImageCol} mx-auto`}>
-        <NavLink href={link} target="blank">
+        <Link to={link} target="blank">
           <Image className={`${styles.Image} w-100`} src={image} alt={alt} />
-        </NavLink>
+        </Link>
       </Col>
     </>
   );
@@ -57,7 +57,7 @@ export const SmallScreenSize = (props) => {
         </Carousel>
       ) : (
         <Carousel
-          className="d-flex"
+          className={`${styles.Carousel} d-flex`}
           slide={false}
           interval={10000}
           touch={true}

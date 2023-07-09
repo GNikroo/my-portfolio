@@ -19,7 +19,7 @@ const Skills = () => {
       </h1>
       <Row className="m-auto justify-content-start align-items-center">
         <Col xs={12} md={6} lg={4} className="py-3">
-          <Card className={`${styles.Skills} mt-0 border-0`}>
+          <Card className={`${styles.Skills} m-auto border-0`}>
             <img className={styles.Image} src={background} />
             <Card.Body className="py-3">
               <Card.Text className={styles.Subtitle}>
