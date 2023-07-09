@@ -35,3 +35,24 @@
 .Zero {
     font-size: 2rem;
 }
+
+.Link {
+    color: inherit;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.Link:hover {
+    color: inherit;
+}
+
+.Line,
+.Arrow {
+    opacity: 0;
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-out;
+}
+
+.Link:hover .Line,
+.Link:hover .Arrow {
+    opacity: 1;
+}
