@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, Container, Image, NavLink } from "react-bootstrap";
+import { Card, Container, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import appStyles from "../App.module.css";
 import { certificates } from "../data";
 import styles from "../styles/Certificates.module.css";
@@ -21,11 +22,11 @@ const Certificates = () => {
                 {certificate.institution}
               </Card.Subtitle>
               <Card.Text className={styles.Date}>{certificate.date}</Card.Text>
-              <NavLink href={certificate.image} target="blank">
+              <Link href={certificate.image} target="_blank">
                 <Card.Text className="pb-5 text-decoration-underline">
                   {certificate.course}
                 </Card.Text>
-              </NavLink>
+              </Link>
               <Image
                 className="d-none"
                 height="400"

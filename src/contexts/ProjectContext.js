@@ -11,7 +11,7 @@ export const SmallScreenSize = (props) => {
   const ProjectDetailsMobile = ({ link, title, subtitle, description }) => (
     <>
       <Col className={`${styles.Caption} ${styles.MobileCaption} mx-auto pb-5`}>
-        <Link to={link} className="text-decoration-none" target="blank">
+        <Link to={link} className="text-decoration-none" target="_blank">
           <h3>{title}</h3>
           <p className={styles.Subtitle}>{subtitle}</p>
           <p>{description}</p>
@@ -23,13 +23,13 @@ export const SmallScreenSize = (props) => {
   const ProjectDetailsDesktop = ({ link, title, subtitle, image, alt }) => (
     <>
       <Col className={`${styles.Caption} ${styles.DesktopCaption}`}>
-        <Link to={link} className="text-decoration-none" target="blank">
+        <Link to={link} className="text-decoration-none" target="_blank">
           <h3>{title}</h3>
           <p className={styles.Subtitle}>{subtitle}</p>
         </Link>
       </Col>
       <Col className={`${styles.ImageCol} mx-auto`}>
-        <Link to={link} target="blank">
+        <Link to={link} target="_blank">
           <Image className={`${styles.Image} w-100`} src={image} alt={alt} />
         </Link>
       </Col>
