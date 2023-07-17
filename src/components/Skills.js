@@ -1,14 +1,14 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import appStyles from "../App.module.css";
-import {
-  databaseSystems,
-  developmentEnvirons,
-  frameworks,
-  languages,
-  versionControls,
-} from "../data";
 import background from "../assets/mobilebackground.jpg";
+import {
+    databaseSystems,
+    developmentEnvirons,
+    frameworks,
+    languages,
+    versionControls,
+} from "../data";
 import styles from "../styles/Skills.module.css";
 
 const Skills = () => {
@@ -20,7 +20,7 @@ const Skills = () => {
       <Row className="m-auto justify-content-start align-items-center">
         <Col xs={12} md={6} lg={4} className="py-3">
           <Card className={`${styles.Skills} m-auto border-0`}>
-            <img className={styles.Image} src={background} />
+            <img className={styles.Image} alt="" src={background} />
             <Card.Body className="py-3">
               <Card.Text className={styles.Subtitle}>
                 Languages
@@ -39,7 +39,7 @@ const Skills = () => {
         </Col>
         <Col xs={12} md={6} lg={4} className="py-3">
           <Card className={`${styles.Skills} border-0`}>
-            <img className={styles.Image} src={background} />
+            <img className={styles.Image} alt="" src={background} />
             <Card.Body className="py-3">
               <Card.Text className={styles.Subtitle}>
                 Frameworks
@@ -58,7 +58,7 @@ const Skills = () => {
         </Col>
         <Col xs={12} md={6} lg={4} className="py-3">
           <Card className={`${styles.Skills} border-0`}>
-            <img className={styles.Image} src={background} />
+            <img className={styles.Image} alt="" src={background} />
             <Card.Body className="py-3">
               <Card.Text className={styles.Subtitle}>
                 Version Control
@@ -79,7 +79,7 @@ const Skills = () => {
         </Col>
         <Col xs={12} md={6} lg={4} className="py-3">
           <Card className={`${styles.Skills} border-0`}>
-            <img className={styles.Image} src={background} />
+            <img className={styles.Image} alt="" src={background} />
             <Card.Body className="py-3">
               <Card.Text className={styles.Subtitle}>
                 Database Systems
@@ -100,7 +100,7 @@ const Skills = () => {
         </Col>
         <Col xs={12} md={6} lg={4} className="py-3">
           <Card className={`${styles.Skills} border-0`}>
-            <img className={styles.Image} src={background} />
+            <img className={styles.Image} alt="" src={background} />
             <Card.Body className="py-3">
               <Card.Text className={styles.Subtitle}>
                 IDE/Text Editor
