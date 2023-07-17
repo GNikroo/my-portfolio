@@ -1,6 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
-import { Container } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styles from "../styles/Footer.module.css";
 
@@ -22,7 +21,7 @@ const Footer = () => {
             <Link
               className="d-inline p-2"
               target="_blank"
-              href="https://github.com/GNikroo"
+              to="https://github.com/GNikroo"
             >
               <i
                 className={`${styles.Icons} fa-brands fa-square-github d-inline`}
@@ -31,7 +30,7 @@ const Footer = () => {
             <Link
               className="d-inline p-2"
               target="_blank"
-              href="https://www.linkedin.com/in/gina-nikroo/"
+              to="https://www.linkedin.com/in/gina-nikroo/"
             >
               <i
                 className={`${styles.Icons} fa-brands fa-linkedin d-inline`}
